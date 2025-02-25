@@ -1,0 +1,41 @@
+# Configuration file for proxy scraper
+
+# Proxy sources for scraping
+proxy_sources:
+  - "https://www.sslproxies.org/"
+  - "https://free-proxy-list.net/"
+  - "https://www.proxy-list.download/api/v1/get?type=http"
+  - "https://www.proxynova.com/proxy-server-list/"
+  - "https://www.us-proxy.org/"
+  - "https://www.socks-proxy.net/"
+  - "https://www.my-proxy.com/free-proxy-list.html"
+
+# List of User Agents for rotating requests
+user_agents:
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"
+  - "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0"
+  - "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0"
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+  - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
+
+# Concurrency limit for validating proxies
+concurrency_limit: 100
+
+# Timeout settings for requests (in seconds)
+request_timeout: 10
+validation_timeout: 5
+
+# Retry settings
+max_retries: 3
+retry_backoff_factor: 2
+
+# Output file for valid proxies
+output_file: "valid_proxies.txt"
+
+# Logging configuration
+log_file: "proxy_scraper.log"
+log_level: "INFO"
