@@ -93,7 +93,7 @@ log_level: "INFO"
 
 Kami mengundang siapa saja yang tertarik untuk berkontribusi dalam proyek ini. Kontributor utama untuk proyek ini adalah:
 
-- [Deku](https://github.com/Dekurity) Pemilik Repository
+- [Dekurity](https://github.com/Dekurity) Pemilik Repository
 
 
 Jika Anda ingin berkontribusi, silakan ajukan pull request atau buka isu di repository ini.
